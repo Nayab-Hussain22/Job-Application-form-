@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+       <style> 
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+         .body{
+            background-color: #f8f4f4;
+        }
+
+        .container{
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: gray;
+            color: black;
+        }
+        .container-2{
+            max-width: 600px;
+            padding: 20px;
+            background-color: white;
+            margin: 0 auto;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+        .web{
+            font-size: 20px;
+        }
+        .button{
+            display:flex;
+            justify-content: center;
+            align-items: center   ;
+            margin-top: 20px;
+            background-color: blue;
+            height: 30px;
+            border: transparent solid 2px;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            
+        }
+        .button:hover{
+            background-color: rgb(209, 128, 132);
+        }
+        .button:active{
+            opacity: 0.7;
+        }
+        .controler{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(200px  1fr));
+            gap: 5px;
+            margin-top: 10px;
+        }
+        .labal{
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        input,select,textarea{
+            padding: 6px 10px;
+            border: 1px solid #ccc ;
+            border-radius: 5px;
+            font-size: 10px;
+        }
+        .input:focus{
+            outline-color: blue ;
+        }
+       </style>
+    </head>
+    <title>online jobs form</title>
+    <body class="body">
+        <div class="container">
+        <div class="container-2">
+            <h1> Job application<samp class="web">(web)</samp></h1>
+            <form action="">
+                <div class="form-container">
+                    <div class="controler">
+                      <label class="first-name">  first name</label>
+                      <input id="first-name" name="first-name" placeholder="Enter First Name"/>
+                    </div>
+                </div>
+              <div class="form-container">
+              <div class="controler">
+              <label for="last-name">  last name</label>
+              <input id="last-name" name="last-name" placeholder="Enter last Name"/>
+                    </div>
+              <div class="form-container">
+              <div class="controler">
+              <label for="Email-Address"> Email Address</label>
+              <input type="email" id="Email-Address" name="Email-Address" placeholder="Email Address"/>
+                    </div>
+                  <div class="form-container">
+              <div class="controler">
+              <label for="job-role"> job role</label>
+              <select id="job-role" name="job-role">
+               <option value="">Select the role for job</option>
+               <option value="forntend">forntend developer</option>
+               <option value="backhand">backhand developer</option>
+               <option value="web-desiners">web-desiners</option>
+                <option value="UI-UX">UI-UX Designers</option>
+                </select>
+              <div class="form-container">
+              <div class="controler">
+              <label for="Address"> Address</label>
+              <textarea id="Address" name="Address" rows="4" cols="50" placeholder="Enter-address"></textarea>
+              </div>
+              <div class="form-container">
+              <div class="controler">
+              <label for="city">city</label>
+              <input id="city" name="city" placeholder="city"/>
+              </div>
+              <div class="form-container">
+              <div class="controler">
+              <label for="pin-code">pin code</label>
+              <input type="number" id="pin-code" name="pin-code" placeholder="pin-code"/>
+              </div>
+               <div class="form-container">
+              <div class="controler">
+              <label for="date">date</label>
+              <input type="date" id="date" name="date" placeholder="date"/>
+              </div>
+              <div class="form-container">
+              <div class="controler">
+              <label for="upload">upload you cv</label>
+              <input type="file" id="upload" name="upload"/>
+              </div>
+              <button class="button" >Submit</button>
+            </form>
+        </div>
+        </div>
+    </body>
+</html>
